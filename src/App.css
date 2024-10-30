@@ -1,42 +1,47 @@
+/* app.css */
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif; /* Fuente general */
+  background-color: #1f1f3f; /* Color de fondo oscuro */
+  color: rgba(255, 255, 255, 0.87); /* Color de texto */
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 1280px; /* Limita el ancho del contenedor principal */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 2rem; /* Espaciado interno */
+  text-align: center; /* Alinea el texto al centro */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 3.2em; /* Tamaño de fuente grande para el título */
+  line-height: 1.1; /* Espaciado de línea */
 }
 
 .card {
-  padding: 2em;
+  padding: 2em; /* Espaciado para tarjetas de preguntas */
+  background-color: #fff; /* Fondo blanco para las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
 }
 
-.read-the-docs {
-  color: #888;
+button {
+  border-radius: 8px; /* Bordes redondeados para botones */
+  border: 1px solid transparent; /* Borde transparente por defecto */
+  padding: 0.6em 1.2em; /* Espaciado interno para botones */
+  margin: 0.6em; /* Margen entre botones */
+  font-size: 1em; /* Tamaño de fuente para botones */
+  background-color: #c1bfd6; /* Color de fondo de botones */
+  color: black; /* Color de texto de botones */
+  cursor: pointer; /* Cursor de mano al pasar por encima */
+  transition: border-color 0.25s; /* Transición suave para el borde */
+}
+
+button:hover {
+  border-color: #646683; /* Color de borde al pasar el ratón */
 }

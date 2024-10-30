@@ -5,6 +5,8 @@ import './App.css'
 import axios from 'axios';
 import QuestionCard from './components/QuestionCard';
 import Scoreboard from './components/Scoreboard';
+import Header from './components/Header';
+import './components/Header.css';
 
 function App() {
   const [questions, setQuestions] = useState([]);
@@ -42,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Trivia Quiz</h1>
+      <Header title="Trivia Quiz" /> {/* Aquí llamas al componente Header */}
       {gameOver ? (
         <Scoreboard score={score} totalQuestions={questions.length} onRestart={handleRestart} />
       ) : (
@@ -55,6 +57,7 @@ function App() {
       )}
     </div>
   );
+  
 }
 
 export default App;
