@@ -1,47 +1,48 @@
-/* app.css */
-
 body {
   margin: 0;
   display: flex;
-  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif; /* Fuente general */
-  background-color: #1f1f3f; /* Color de fondo oscuro */
-  color: rgba(255, 255, 255, 0.87); /* Color de texto */
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #2e4d78, #3b5a85);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 #root {
-  max-width: 1280px; /* Limita el ancho del contenedor principal */
-  margin: 0 auto; /* Centra el contenedor */
-  padding: 2rem; /* Espaciado interno */
-  text-align: center; /* Alinea el texto al centro */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 h1 {
-  font-size: 3.2em; /* Tamaño de fuente grande para el título */
-  line-height: 1.1; /* Espaciado de línea */
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .card {
-  padding: 2em; /* Espaciado para tarjetas de preguntas */
-  background-color: #fff; /* Fondo blanco para las tarjetas */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
 }
 
 button {
-  border-radius: 8px; /* Bordes redondeados para botones */
-  border: 1px solid transparent; /* Borde transparente por defecto */
-  padding: 0.6em 1.2em; /* Espaciado interno para botones */
-  margin: 0.6em; /* Margen entre botones */
-  font-size: 1em; /* Tamaño de fuente para botones */
-  background-color: #c1bfd6; /* Color de fondo de botones */
-  color: black; /* Color de texto de botones */
-  cursor: pointer; /* Cursor de mano al pasar por encima */
-  transition: border-color 0.25s; /* Transición suave para el borde */
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 0.6em;
+  font-size: 1em;
+  background-color: #5d8eb9;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.1s;
 }
 
 button:hover {
-  border-color: #646683; /* Color de borde al pasar el ratón */
+  background-color: #5a8bb1;
+  transform: scale(1.05);
 }
